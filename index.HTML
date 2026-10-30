@@ -3,30 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
     <title>Velox</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
+    <h1>VELOX STOCK MARKETS</h1>
+
     <header>
-      <h1>Velox</h1>
+      <div id="overview-link">Overview</div>
+      <div id="indices-link">Indices</div>
+      <div id="stocks-link">Stocks</div>
+      <div id="crypto-link">Crypto</div>
     </header>
+    <main>
+      <section id="us-markets">
+        <h2>US Markets</h2>
+        <p>Get a quick snapshot of the market.</p>
+      </section>
 
-    <div class="container">
-      <h1>📈 Velox</h1>
+      <section id="eu-markets">
+        <h2>EU Markets</h2>
+        <p>View major stock indices and their performance.</p>
+      </section>
 
-      <form id="stock-form">
-        <input
-          type="text"
-          id="symbol-input"
-          placeholder="Enter Stock Symbol"
-          required
-        />
-        <button type="submit" id="submit-button">Get Stock Data</button>
-      </form>
-      <div id="stock-result"></div>
-    </div>
+      <section id="asia-markets">
+        <h2>Asia Markets</h2>
+        <p>Search for individual stocks and view their data.</p>
+      </section>
 
+      <div class="container">
+        <h1>📈 Velox Stock</h1>
+
+        <form id="stock-form">
+          <input
+            type="text"
+            id="symbol-input"
+            placeholder="Enter Stock Symbol"
+            required
+          />
+          <button type="submit" id="submit-button">Get Stock Data</button>
+        </form>
+        <div id="stock-result"></div>
+      </div>
+    </main>
     <footer>
       This project was coded by
       <a href="https/;//github.com/natjam13" target="_blank"> Nat Murray</a> and
@@ -34,9 +60,8 @@
       <a href="https://github.com/natjam13/velox" target="_blank">
         open-sourced on Github</a
       >
-      > and also hosted on
+      and also hosted on
       <a href="https://velox-sm.netlify.app/" target="_blank">Netlify</a>
-      >
     </footer>
     <script src="src/index.js"></script>
   </body>
