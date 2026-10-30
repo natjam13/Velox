@@ -1,11 +1,9 @@
-function handleStockFormSubmit(event) {
-  event.preventDefault();
-
-  let symbolInput = document.querySelector("#symbol-input");
 
 
-  stockResult.innerHTML = `Searching for ${symbolInput.value}...`;
 
-  console.log(symbolInput.value);
-}
 
+
+
+apikey ZMDYF97OADMLE0C1.
+
+function=TIME_SERIES_DAILY_ADJUSTED&symbol=000002.SHZ&outputsize=full&apikey=demo
